@@ -1,0 +1,5 @@
+modules:
+  - from-file: common_modules/base/utils.yml
+  - from-file: common_modules/base/development.yml
+  - from-file: common_modules/base/gaming.yml
+  - from-file: common_modules/base/remove.yml

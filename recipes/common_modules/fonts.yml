@@ -1,9 +1,13 @@
 type: fonts
 fonts:
-  google-fonts:
-    - Fira Code
-    - Open Sans
-    - JetBrains Mono
-    - Roboto
   nerd-fonts:
+    - FiraCode
+    - Hack
+    - SourceCodePro
+    - Terminus
+    - JetBrainsMono
+    - NerdFontsSymbolsOnly
     - Iosevka
+  google-fonts:
+    - Roboto
+    - Open Sans
