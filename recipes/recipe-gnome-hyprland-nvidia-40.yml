@@ -17,5 +17,7 @@ modules:
   - from-file: common_modules/bling.yml
   - from-file: common_modules/flatpaks.yml
   - from-file: common_modules/systemd.yml
-  - from-file: common_modules/scripts.yml
+  - from-file: common_modules/script.yml
   - from-file: common_modules/gschema.yml
+
+  - type: signing 
