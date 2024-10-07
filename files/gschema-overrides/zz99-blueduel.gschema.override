@@ -15,6 +15,7 @@ tap-to-click=true
 [org.gnome.mutter]
 workspaces-only-on-primary=false
 dynamic-workspaces=false
+check-alive-timeout=30000
 
 [org.gnome.desktop.interface]
 gtk-enable-primary-paste=false
@@ -26,17 +27,30 @@ color-scheme="prefer-dark"
 [org.gnome.desktop.wm.preferences]
 button-layout=":minimize,maximize,close"
 num-workspaces=9
+resize-with-right-button=true
 
 [org.gnome.desktop.wm.keybindings]
+close=['<Alt>F4', '<Super>q']
 switch-to-workspace-left=['<Alt>Left']
 switch-to-workspace-right=['<Alt>Right']
-
-[org.gnome.desktop.background]
-picture-options="zoom"
-picture-uri='file:///usr/share/backgrounds/RockyMountain/RockyMountain1.jpg'
-picture-uri-dark='file:///usr/share/backgrounds/RockyMountain/RockyMountain2.jpg'
-primary-color='7FC1CA'
-secondary-color='000000'
+move-to-workspace-1=['<Super><Shift>1']
+move-to-workspace-2=['<Super><Shift>2']
+move-to-workspace-3=['<Super><Shift>3']
+move-to-workspace-4=['<Super><Shift>4']
+move-to-workspace-5=['<Super><Shift>5']
+move-to-workspace-6=['<Super><Shift>6']
+move-to-workspace-7=['<Super><Shift>7']
+move-to-workspace-8=['<Super><Shift>8']
+move-to-workspace-9=['<Super><Shift>9']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+switch-to-workspace-7=['<Super>7']
+switch-to-workspace-8=['<Super>8']
+switch-to-workspace-9=['<Super>9']
 
 [org.gnome.software]
 allow-updates=false
@@ -51,42 +65,22 @@ previous=['<Alt>comma']
 
 [org.gnome.settings-daemon.plugins.color]
 night-light-enabled=true
+night-light-temperature=4500
 
 [org.gnome.desktop.session]
 idle-delay=900
 
 [org.gnome.desktop.screensaver]
-lock-delay=3600
-
-[org.gnome.settings-daemon.plugins.power]
-sleep-inactive-ac-type="nothing"
-sleep-inactive-battery-type="nothing"
-
-[org.gnome.shell]
-favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.kde.konsole.desktop', 'code.desktop']
-enabled-extensions=['disable-workspace-animation@ethnarque', 'dash-to-panel@jderose9.github.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io', 'appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'hibernate-status@dromi', 'just-perfection-desktop@just-perfection']
-
-[org.gnome.shell.Extensions.GSConnect]
-enabled=false
-
-[org.gnome.shell.extensions.dash-to-panel]
-hide-overview-on-startup=true
-isolate-workspaces=true
-
-[org.gnome.shell.extensions.just-perfection]
-workspace-wrap-around=true
-workspace-popup=false
-window-demands-attention-focus=true
-world-clock=false
-keyboard-layout=false
-accessibility-menu=false
-startup-status=0
+lock-enabled=false
 
 [org.gnome.shell.app-switcher]
 current-workspace-only=true
 
-[org.gtk.gtk4.Settings.FileChooser]
-sort-directories-first=true
+[org.gnome.settings-daemon.plugins]
+sleep-inactive-ac-type=nothing
 
-[org.gtk.Settings.FileChooser]
-sort-directories-first=true
+[org.gnome.desktop.privacy]
+recent-files-max-age=1
+remove-old-trash-files=true
+remove-old-temp-files=true
+old-files-age=5
