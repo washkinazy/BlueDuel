@@ -4,14 +4,6 @@ sort-directories-first=true
 [org.gtk.Settings.FileChooser]
 sort-directories-first=true
 
-[org.gnome.desktop.peripherals.touchpad]
-tap-to-click=true
-two-finger-scrolling-enabled=true
-natural-scroll=false
-
-[org.gnome.desktop.peripherals.touchpad:GNOME-Greeter]
-tap-to-click=true
-
 [org.gnome.mutter]
 workspaces-only-on-primary=false
 dynamic-workspaces=false
@@ -20,12 +12,11 @@ check-alive-timeout=30000
 [org.gnome.desktop.interface]
 gtk-enable-primary-paste=false
 enable-hot-corners=false
-text-scaling-factor=1.5
 scaling-factor=1
 color-scheme="prefer-dark"
 
 [org.gnome.desktop.wm.preferences]
-button-layout=":minimize,maximize,close"
+button-layout=":close"
 num-workspaces=9
 resize-with-right-button=true
 
@@ -58,11 +49,6 @@ download-updates=false
 download-updates-notify=false
 packaging-format-preference=['flatpak:flathub-user']
 
-[org.gnome.settings-daemon.plugins.media-keys]
-next=['<Alt>period']
-play=['<Alt>slash']
-previous=['<Alt>comma']
-
 [org.gnome.settings-daemon.plugins.color]
 night-light-enabled=true
 night-light-temperature=4500
@@ -76,7 +62,7 @@ lock-enabled=false
 [org.gnome.shell.app-switcher]
 current-workspace-only=true
 
-[org.gnome.settings-daemon.plugins]
+[org.gnome.settings-daemon.plugins.power]
 sleep-inactive-ac-type=nothing
 
 [org.gnome.desktop.privacy]
