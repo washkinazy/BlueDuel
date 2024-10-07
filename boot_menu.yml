@@ -1,0 +1,11 @@
+ublue_variants:
+  - label: jitcos/cabos-nvidia
+    ks: /kickstart/ublue-os-nvidia.ks
+    flavors:
+      - label: blueduel-nvidia
+        info: GNOME
+  - label: washkinazy/blueduel
+    ks: /kickstart/ublue-os.ks
+    flavors:
+      - label: blueduel
+        info: GNOME
