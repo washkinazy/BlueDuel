@@ -62,9 +62,6 @@ lock-enabled=false
 [org.gnome.shell.app-switcher]
 current-workspace-only=true
 
-[org.gnome.settings-daemon.plugins.power]
-sleep-inactive-ac-type=nothing
-
 [org.gnome.desktop.privacy]
 recent-files-max-age=1
 remove-old-trash-files=true
