@@ -1,14 +1,12 @@
 [Unit]
-Description=Manage system flatpaks
-Wants=network-online.target
-After=network-online.target
+Description=Add wheel members to docker
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/system-flatpak-setup
+ExecStart=/usr/bin/user-groups
 Restart=on-failure
 RestartSec=30
 StartLimitInterval=0
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

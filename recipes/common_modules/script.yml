@@ -1,0 +1,4 @@
+type: script
+scripts:
+  - extra-packages.sh
+  # - oh-my-zsh.sh
