@@ -8,3 +8,14 @@ install:
   - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v55
   - caffeinepatapon.info.v54
   - clipboard-indicatortudmotu.com.v59
+
+# (TODO) Better extension mappings. 
+# install:
+#   - Space Bar
+#   - Launch new instance
+#   - Just Perfection
+#   - AppIndicator and KStatusNotifierItem Support
+#   - User Themes
+#   - Auto Move Windows
+#   - Caffeine
+#   - Clipboard Indicator

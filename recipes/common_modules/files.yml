@@ -1,0 +1,8 @@
+type: files
+files:
+  - source: usr
+    destination: /usr
+  - source: etc
+    destination: /etc
+  # - source: skel
+  #   destination: /usr/etc/skel
