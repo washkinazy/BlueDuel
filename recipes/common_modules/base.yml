@@ -1,0 +1,79 @@
+modules:
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Fira Code
+        - Open Sans
+        - JetBrains Mono
+        - Roboto
+      nerd-fonts:
+        - Iosevka
+
+  - type: files
+    files:
+      - source: usr
+        destination: /usr
+      - source: etc
+        destination: /etc
+      # - source: skel
+      #   destination: /usr/etc/skel
+
+  - from-file: common_modules/rpm-ostree/rpm-ostree.yml
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-system
+      repo-title: "Flathub (System)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Snapshot
+        - org.gnome.Contacts
+        - org.gnome.clocks
+        - org.gnome.Evince
+        - org.gnome.TextEditor
+        - org.gnome.Loupe
+        # - com.github.neithern.g4music
+        # - com.github.rafostar.Clapper
+        - io.missioncenter.MissionCenter
+        # - com.vixalien.sticky
+        - com.github.tchx84.Flatseal
+        - com.mattjakeman.ExtensionManager
+        - io.github.flattool.Warehouse
+        - org.mozilla.firefox
+        - it.mijorus.gearlever
+        # - org.kde.konsole
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub-user
+      repo-title: "Flathub"
+
+  - type: systemd
+    system:
+      enabled:
+        # - docker.socket
+        - user-groups.service
+        # - plymouth-theme.service
+        # - tlp.service
+        # - boot-swap.service
+        # - hibernate-swap.service
+        # - hibernate-swap-resume.service
+        # - suspend-hibernate-swap.service
+        # - suspend-hibernate-swap-resume.service
+        # - auto-cpufreq.service
+      masked:
+        - power-profiles-daemon.service
+    user:
+      enabled:
+        - podman.socket
+        # - user-vscode.service
+
+  - type: script
+    scripts:
+      - extra-packages.sh
+      # - oh-my-zsh.sh
+
+  # - type: yafti
+  - type: signing

@@ -1,0 +1,18 @@
+# image will be published to ghcr.io/<user>/<name>
+name: blueduel
+# description will be included in the image's metadata
+description: Fedora Silverblue based image extended with ublue-os nvidia and Hyprland
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/silverblue-nvidia
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: common_modules/akmods/base.yml
+  - from-file: common_modules/rpm-ostree/gnome-40.yml
+  - from-file: common_modules/base.yml
+  - from-file: common_modules/rpm-ostree/gnome-base.yml
+  - from-file: common_modules/gnome-extensions/40.yml
+  - from-file: common_modules/gschema/base.yml
