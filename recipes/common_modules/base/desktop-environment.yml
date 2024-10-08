@@ -4,11 +4,16 @@ repos:
 
 install:
   - thunar
+  - thunar-archive-plugin 
   - thunar-volman
-  - thunar-archive-plugin
-  - gvfs
+  - xarchiver
+  - gvfs-mtp
+  - gvfs-gphoto2
   - gvfs-smb
+  - gvfs-nfs
+  - gvfs-fuse
+  - gvfs-archive
   - kvantum
   - kvantum-qt5
-  - yaru-theme
-  - fuzzel
+  - xdg-user-dirs
+  - wofi

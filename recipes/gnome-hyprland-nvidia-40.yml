@@ -15,6 +15,7 @@ modules:
   - from-file: common_modules/akmods.yml
   - from-file: common_modules/base.yml
   - from-file: common_modules/gnome.yml
+  - from-file: common_modules/hyprland.yml
   - from-file: common_modules/bling.yml
   - from-file: common_modules/flatpaks.yml
   - from-file: common_modules/systemd.yml

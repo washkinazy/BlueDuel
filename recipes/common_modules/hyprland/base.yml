@@ -1,5 +1,15 @@
-modules:
-  - type: rpm-ostree
-    install:
-      - hyprland
-      - xdg-desktop-portal-hyprland
+type: rpm-ostree
+install:
+  - hyprland
+  - xdg-desktop-portal-hyprland
+  - hyprlock
+  - hypridle
+  - kanshi
+  - hyprpaper
+  - wl-clipboard
+  - network-manager-applet
+  - brightnessctl
+  - qt5-qtwayland
+  - qt6-qtwayland
+  - vulkan-validation-layers
+  - vulkan-tools

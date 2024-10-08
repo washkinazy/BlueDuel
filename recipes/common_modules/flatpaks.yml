@@ -19,6 +19,11 @@ system:
     - io.github.flattool.Warehouse
     - org.mozilla.firefox
     - it.mijorus.gearlever
+    - org.gimp.GIMP
+    - org.inkscape.Inkscape
+    - org.libreoffice.LibreOffice
+    - com.spotify.Client
+    - com.slack.Slack
 user:
   repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
   repo-name: flathub-user
