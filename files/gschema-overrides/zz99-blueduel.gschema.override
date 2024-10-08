@@ -1,5 +1,6 @@
 [org.gtk.gtk4.Settings.FileChooser]
 sort-directories-first=true
+clock-format='24h'
 
 [org.gtk.Settings.FileChooser]
 sort-directories-first=true
@@ -22,8 +23,8 @@ resize-with-right-button=true
 
 [org.gnome.desktop.wm.keybindings]
 close=['<Alt>F4', '<Super>q']
-switch-to-workspace-left=['<Alt>Left']
-switch-to-workspace-right=['<Alt>Right']
+switch-to-workspace-left=['<Control><Alt>Left']
+switch-to-workspace-right=['<Control><Alt>Right']
 move-to-workspace-1=['<Super><Shift>1']
 move-to-workspace-2=['<Super><Shift>2']
 move-to-workspace-3=['<Super><Shift>3']
@@ -33,15 +34,7 @@ move-to-workspace-6=['<Super><Shift>6']
 move-to-workspace-7=['<Super><Shift>7']
 move-to-workspace-8=['<Super><Shift>8']
 move-to-workspace-9=['<Super><Shift>9']
-switch-to-workspace-1=['<Super>1']
-switch-to-workspace-2=['<Super>2']
-switch-to-workspace-3=['<Super>3']
-switch-to-workspace-4=['<Super>4']
-switch-to-workspace-5=['<Super>5']
-switch-to-workspace-6=['<Super>6']
-switch-to-workspace-7=['<Super>7']
-switch-to-workspace-8=['<Super>8']
-switch-to-workspace-9=['<Super>9']
+move-to-workspace-10=['<Super><Shift>0']
 
 [org.gnome.software]
 allow-updates=false
@@ -67,3 +60,31 @@ recent-files-max-age=1
 remove-old-trash-files=true
 remove-old-temp-files=true
 old-files-age=5
+
+[org.gnome.shell]
+enabled-extensions=['auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'caffeine@patapon.info', 'space-bar@luchrioh', 'appindicatorsupport@rgcjonas.gmail.com', 'pomodoro@arun.codito.in']
+
+[org.gnome.shell.extensions.space-bar.shortcuts]
+enable-active-workspace-shortcuts=true
+enable-move-to-workspace-shortcuts=true
+
+[org.gnome.desktop.interface]
+clock-format='24h'
+
+[org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0]
+binding=['<Super>Return']
+command='kitty'
+name='Terminal'
+
+[org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom1]
+binding=['<Super>d']
+command='wofi --show drun'
+name='Launcher'
+
+[org.gnome.settings-daemon.plugins.media-keys]
+['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Shift><Super>h']
+www=['<Shift><Super>w']
+
+[org.gnome.shell.keybindings]
+show-screenshot-ui=['<Super>Print']

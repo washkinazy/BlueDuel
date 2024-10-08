@@ -1,21 +1,28 @@
 type: gnome-extensions
-install:
-  - space-barluchrioh.v25
-  - just-perfection-desktopjust-perfection.v28
-  - caffeinepatapon.info.v54
-  - appindicatorsupportrgcjonas.gmail.com.v58
-  - user-themegnome-shell-extensions.gcampax.github.com.v55
-  - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v55
-  - caffeinepatapon.info.v54
-  - clipboard-indicatortudmotu.com.v59
-
-# (TODO) Better extension mappings. 
 # install:
-#   - Space Bar
-#   - Launch new instance
-#   - Just Perfection
-#   - AppIndicator and KStatusNotifierItem Support
-#   - User Themes
-#   - Auto Move Windows
-#   - Caffeine
-#   - Clipboard Indicator
+#   - space-barluchrioh.v25
+#   - just-perfection-desktopjust-perfection.v28
+#   - caffeinepatapon.info.v54
+#   - appindicatorsupportrgcjonas.gmail.com.v58
+#   - user-themegnome-shell-extensions.gcampax.github.com.v55
+#   - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v55
+#   - caffeinepatapon.info.v54
+#   - clipboard-indicatortudmotu.com.v59
+
+# https://extensions.gnome.org/extension/16/auto-move-windows/
+# https://extensions.gnome.org/extension/19/user-themes/
+# https://extensions.gnome.org/extension/517/caffeine/
+# https://extensions.gnome.org/extension/600/launch-new-instance/
+# https://extensions.gnome.org/extension/5090/space-bar/
+# https://extensions.gnome.org/extension/779/clipboard-indicator/
+# https://extensions.gnome.org/extension/615/appindicator-support/
+# https://extensions.gnome.org/extension/3843/just-perfection/
+install:
+  - 16
+  - 19
+  - 517
+  - 600
+  - 5090
+  - 779
+  - 615
+  - 3843
