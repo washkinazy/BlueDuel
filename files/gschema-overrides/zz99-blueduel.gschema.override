@@ -64,10 +64,6 @@ old-files-age=5
 [org.gnome.shell]
 enabled-extensions=['auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'caffeine@patapon.info', 'space-bar@luchrioh', 'appindicatorsupport@rgcjonas.gmail.com', 'pomodoro@arun.codito.in']
 
-[org.gnome.shell.extensions.space-bar.shortcuts]
-enable-active-workspace-shortcuts=true
-enable-move-to-workspace-shortcuts=true
-
 [org.gnome.desktop.interface]
 clock-format='24h'
 
